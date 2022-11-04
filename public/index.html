@@ -1,43 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="css/style.css">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <!-- ===== Unicons ===== -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        <title>ResourceBox</title> 
+    </head>
+    <body>
+        <!--===== Nav Bar =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Resource Box</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="html_files/resources.html" class="nav__link">Resources</a></li>
+                        <li class="nav__item"><a href="html_files/aboutus.html" class="nav__link">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Begin your<br>journey as<br>a <span class="home__title-color">progrmmer</span></h1>
+
+                    <a href="html_files/resources.html" class="button button_aboutus">Let's get started !</a>
+                </div>
+                <div class="home__img">
+                    <img src="images/landing_img.png" width="500" height="500" alt="Can't load">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="images/about_img.png" alt="about img preview">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__title">Why <span class="about__title-color">ResourceBox?</span></h2>
+                        <p class="about__text">The <b>Resource Box</b> is the ultimate resource site for all students.
+                            We have organized a list of websites that are dedicated to helping students get started.
+                            <br><br> It not only has a list of websites but also focuses on all types of <b>domains</b> and their resources to get <br>  started!</p>           
+                    </div>                                   
+                </div>
+            </section>
+            
+        </main>
+    </body>
 </html>
