@@ -18,7 +18,7 @@ function Category() {
         <div>
         <h2>Development Data</h2>
             <div className="media-scroller">
-                {developmentdata.map(createCard())}
+                {developmentdata.map(createCard)}
             </div>
         </div>
     );
